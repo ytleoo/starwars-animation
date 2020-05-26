@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'starjedi';
+  src: url("Starjhol.ttf");
+  font-weight: 200;
+  
+}
+
+body{
+  background: #000;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.first {
+  opacity: 0;
+  width: 1000px;
+  color: #3cc0fa;
+  font-size: 60px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  animation: fadeOut 5s ease-in-out;
+}
+
+.starwars {
+  opacity: 0;
+  color: #ffff03;
+  width: 600px;
+  font-family: "starjedi";
+  font-size: 200px;
+  line-height: 200px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  animation: scale 10s ease 7s;
+}
+
+.text {
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  color: #ffff03;
+  font-size: 40px;
+  width: 600px;
+  transform: perspective(300px) rotateX(30deg);
+  animation: scroll 30s linear 13s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+  20%{
+    opacity: 1;
+  }
+  50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scale {
+  0%{
+    opacity: 1;
+    transform: scale(2);
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+@keyframes scroll {
+    0% { top: 100%; }
+    100% { top: -100%; }
+}
