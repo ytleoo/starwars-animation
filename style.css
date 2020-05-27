@@ -42,7 +42,7 @@ body{
   animation: scale 10s ease 7s;
 }
 
-.text {
+.box {
   position: absolute;
   top: 100%;
   left: 30%;
@@ -50,7 +50,7 @@ body{
   font-size: 40px;
   width: 600px;
   transform: perspective(300px) rotateX(30deg);
-  animation: scroll 30s linear 13s;
+  animation: scroll 30s linear 10s;
 }
 
 @keyframes fadeOut {
