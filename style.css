@@ -44,13 +44,14 @@ body{
 
 .box {
   position: absolute;
-  top: 100%;
-  left: 30%;
+  top: -10%;
+  left: 0%;
+  overflow: hidden;
   color: #ffff03;
-  font-size: 40px;
-  width: 600px;
-  transform: perspective(300px) rotateX(30deg);
-  animation: scroll 30s linear 10s;
+  font-size: 70px;
+  transform-origin: 50% 100%;
+  transform: perspective(300px) rotateX(25deg);
+  animation: scroll 25s linear 12s;
 }
 
 @keyframes fadeOut {
@@ -83,6 +84,6 @@ body{
 }
 
 @keyframes scroll {
-    0% { top: 100%; }
-    100% { top: -100%; }
+    0% { top: -10%; }
+    100% { top: -170%; }
 }
